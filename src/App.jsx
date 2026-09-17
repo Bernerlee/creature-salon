@@ -5,6 +5,7 @@ import EditorialSection from "./components/EditorialSection";
 import ServicesSection from "./components/ServicesSection";
 import TeamSection from "./components/TeamSection";
 import GallerySection from "./components/GallerySection";
+import SustainabilitySection from "./components/SustainabilitySection";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <EditorialSection />
         <ServicesSection />
         <TeamSection />
+        <SustainabilitySection />
         <GallerySection />
       </main>
     </>
