@@ -3,6 +3,7 @@ import Hero from "./components/Hero";
 import BrandStatement from "./components/BrandStatement";
 import EditorialSection from "./components/EditorialSection";
 import ServicesSection from "./components/ServicesSection";
+import TeamSection from "./components/TeamSection";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <BrandStatement />
         <EditorialSection />
         <ServicesSection />
+        <TeamSection />
       </main>
     </>
   );
