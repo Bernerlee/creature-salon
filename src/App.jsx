@@ -8,6 +8,7 @@ import GallerySection from "./components/GallerySection";
 import SustainabilitySection from "./components/SustainabilitySection";
 import BookingCTA from "./components/BokingCTA";
 import LocationSection from "./components/Location";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -25,6 +26,8 @@ function App() {
         <BookingCTA />
         <LocationSection />
       </main>
+
+      <Footer />
     </>
   );
 }
