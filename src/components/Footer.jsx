@@ -1,4 +1,5 @@
-import { ArrowUpRight, Instagram, ArrowUp } from "lucide-react";
+import { ArrowUpRight, ArrowUp } from "lucide-react";
+import { FaInstagram } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 function Footer() {
@@ -74,7 +75,7 @@ function Footer() {
               className="flex items-center gap-2 transition-opacity hover:opacity-60"
             >
               Instagram
-              <Instagram size={16} />
+              <FaInstagram size={16} />
             </a>
 
             <Link
