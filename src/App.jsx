@@ -6,6 +6,8 @@ import ServicesSection from "./components/ServicesSection";
 import TeamSection from "./components/TeamSection";
 import GallerySection from "./components/GallerySection";
 import SustainabilitySection from "./components/SustainabilitySection";
+import BookingCTA from "./components/BokingCTA";
+import LocationSection from "./components/Location";
 
 function App() {
   return (
@@ -20,6 +22,8 @@ function App() {
         <TeamSection />
         <SustainabilitySection />
         <GallerySection />
+        <BookingCTA />
+        <LocationSection />
       </main>
     </>
   );
