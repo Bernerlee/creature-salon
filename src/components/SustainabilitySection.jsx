@@ -1,92 +1,60 @@
-import { ArrowUpRight, Leaf } from "lucide-react";
+import { ArrowUpRight } from "lucide-react";
 import { Link } from "react-router-dom";
-
-import sustainabilityImage from "../assets/images/workshops-photo.jpg";
+import workshopsImage from "../assets/images/workshops-photo.jpg";
 
 function SustainabilitySection() {
   return (
-    <section className="overflow-hidden bg-[#171717] px-6 py-24 text-[#F3EFE7] md:px-10 md:py-36 lg:px-12 lg:py-44">
-      <div className="mx-auto max-w-[1440px]">
-        {/* Section Header */}
-        <div className="mb-16 flex items-center justify-between border-t border-white/20 pt-5 text-[10px] font-medium uppercase tracking-[0.15em] text-white/60 md:mb-24 md:text-xs">
-          <span>05 / Our Approach</span>
+    <section className="bg-[#171717] px-6 py-24 text-[#F3EFE7] md:px-10 lg:px-16 lg:py-32">
+      {/* Header */}
+      <div className="mb-16 border-t border-[#F3EFE7]/20 pt-6">
+        <p className="text-xs uppercase tracking-[0.2em] text-[#F3EFE7]/50">
+          Our approach
+        </p>
+      </div>
 
-          <div className="flex items-center gap-2">
-            <Leaf size={15} strokeWidth={1.5} />
-            Conscious Beauty
-          </div>
-        </div>
-
-        {/* Main Content */}
-        <div className="grid items-center gap-14 lg:grid-cols-[1.1fr_0.9fr] lg:gap-24">
-          {/* Text Content */}
-          <div>
-            <p className="mb-8 text-xs font-medium uppercase tracking-[0.15em] text-white/50">
-              Beauty With Intention
-            </p>
-
-            <h2 className="font-serif text-[clamp(4rem,9vw,10rem)] leading-[0.8] tracking-[-0.06em]">
-              Beauty
-              <br />
-              <span className="italic">that cares.</span>
-            </h2>
-
-            <p className="mt-10 max-w-md text-sm leading-relaxed text-white/60 md:mt-14">
-              We believe taking care of yourself should also mean taking care of
-              the world around you.
-            </p>
-
-            <Link
-              to="/about"
-              className="group mt-10 flex w-fit items-center gap-3 border-b border-white/40 pb-3 text-xs font-medium uppercase tracking-[0.12em] transition-colors duration-300 hover:border-white"
-            >
-              Discover Our Approach
-              <ArrowUpRight
-                size={16}
-                strokeWidth={1.5}
-                className="transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1"
-              />
-            </Link>
-          </div>
-
-          {/* Image + Statistic */}
-          <div className="relative">
-            <div className="aspect-[4/5] overflow-hidden">
-              <img
-                src={sustainabilityImage}
-                alt="Creature Studio workshop"
-                className="h-full w-full object-cover transition-transform duration-700 hover:scale-105"
-              />
-            </div>
-
-            {/* Image Caption */}
-            <p className="mt-4 text-[10px] font-medium uppercase tracking-[0.15em] text-white/40">
-              Creature Studio / Community
-            </p>
-          </div>
-        </div>
-
+      {/* Main Content */}
+      <div className="grid gap-16 lg:grid-cols-2 lg:items-center">
         {/* Statistic */}
-        <div className="mt-24 border-t border-white/20 pt-10 md:mt-36 md:pt-14">
-          <div className="grid gap-10 md:grid-cols-[1fr_1fr] md:items-end">
-            <div>
-              <p className="text-[clamp(6rem,16vw,15rem)] font-serif leading-[0.75] tracking-[-0.07em]">
-                95<span className="text-[0.5em]">%</span>
-              </p>
+        <div>
+          <div className="flex items-baseline">
+            <span className="text-[clamp(7rem,16vw,15rem)] font-light leading-[0.8] tracking-[-0.09em]">
+              95
+            </span>
 
-              <p className="mt-6 text-xs font-medium uppercase tracking-[0.15em] text-white/60">
-                Beauty Waste Recycled
-              </p>
-            </div>
-
-            <div className="max-w-sm">
-              <p className="text-sm leading-relaxed text-white/60">
-                Through our sustainability efforts, we work toward reducing
-                waste and creating a more conscious salon experience.
-              </p>
-            </div>
+            <span className="ml-2 text-5xl font-light tracking-[-0.06em] md:text-7xl">
+              %
+            </span>
           </div>
+
+          <p className="mt-8 text-xs uppercase tracking-[0.18em] text-[#F3EFE7]/60">
+            Beauty waste recycled
+          </p>
         </div>
+
+        {/* Description */}
+        <div className="max-w-md lg:ml-auto">
+          <p className="text-xl leading-8 text-[#F3EFE7]/75 md:text-2xl md:leading-9">
+            Through our sustainability efforts, we work toward reducing waste
+            and creating a more conscious salon experience.
+          </p>
+
+          <Link
+            to="/about"
+            className="mt-8 inline-flex items-center gap-3 border-b border-[#F3EFE7]/60 pb-2 text-sm uppercase tracking-[0.12em] transition-opacity hover:opacity-60"
+          >
+            Learn about our approach
+            <ArrowUpRight size={17} />
+          </Link>
+        </div>
+      </div>
+
+      {/* Image */}
+      <div className="mt-20 overflow-hidden">
+        <img
+          src={workshopsImage}
+          alt="Creature Studio workshop"
+          className="h-[300px] w-full object-cover md:h-[450px] lg:h-[550px]"
+        />
       </div>
     </section>
   );
