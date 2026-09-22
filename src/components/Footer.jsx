@@ -6,9 +6,9 @@ function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-[#171717] px-6 py-16 text-[#F3EFE7] md:px-10 lg:px-16">
+    <footer className="bg-[#171717] px-6 pb-8 pt-10 text-[#F3EFE7] md:px-10 lg:px-16">
       {/* Top Section */}
-      <div className="grid gap-12 border-b border-[#F3EFE7]/20 pb-16 md:grid-cols-2 lg:grid-cols-3">
+      <div className="mx-auto grid max-w-[1400px] gap-10 border-b border-[#F3EFE7]/20 pb-10 md:grid-cols-2 lg:grid-cols-3">
         {/* Brand */}
         <div>
           <Link to="/" className="text-4xl font-semibold tracking-[-0.08em]">
@@ -90,7 +90,7 @@ function Footer() {
       </div>
 
       {/* Bottom Section */}
-      <div className="flex flex-col gap-6 pt-8 text-xs text-[#F3EFE7]/50 md:flex-row md:items-center md:justify-between">
+      <div className="mx-auto flex max-w-[1400px] flex-col gap-5 pt-6 text-xs text-[#F3EFE7]/50 md:flex-row md:items-center md:justify-between">
         <p>© {currentYear} Creature Salon. All rights reserved.</p>
 
         <button

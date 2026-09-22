@@ -147,7 +147,7 @@ function About() {
             />
           </div>
 
-          <div className="overflow-hidden md:mt-24">
+          <div className="overflow-hidden">
             <img
               src={stylistImage}
               alt="Stylist working with a client"
@@ -232,44 +232,47 @@ function About() {
       </section>
 
       {/* Location */}
-      <section className="bg-[#171717] px-6 py-24 text-[#F3EFE7] md:px-10 lg:px-16 lg:py-32">
-        <div className="grid gap-10 md:grid-cols-2">
-          <div>
-            <p className="mb-6 text-xs uppercase tracking-[0.2em] text-[#F3EFE7]/50">
-              Find us
-            </p>
+      <section className="bg-[#171717] px-6 py-12 text-[#F3EFE7] md:px-10 md:py-16 lg:px-16">
+        <div className="mx-auto max-w-[1400px] border-t border-[#F3EFE7]/20 pt-8">
+          <div className="grid gap-10 md:grid-cols-2 md:items-end">
+            {/* Heading */}
+            <div>
+              <p className="mb-5 text-xs uppercase tracking-[0.2em] text-[#F3EFE7]/50">
+                Find us
+              </p>
 
-            <h2 className="text-5xl leading-[0.95] tracking-[-0.07em] md:text-7xl">
-              Meet us in
-              <br />
-              Atlanta.
-            </h2>
-          </div>
+              <h2 className="max-w-xl text-5xl leading-[0.9] tracking-[-0.07em] md:text-6xl lg:text-8xl">
+                Meet us
+                <br />
+                in Atlanta.
+              </h2>
+            </div>
 
-          <div className="md:ml-auto md:max-w-sm">
-            <p className="text-lg leading-8 text-[#F3EFE7]/70">
-              900 Dekalb Ave. NE
-              <br />
-              Suite 400
-              <br />
-              Atlanta, GA 30307
-              <br />
-              USA
-            </p>
+            {/* Contact Details */}
+            <div className="max-w-xs">
+              <p className="text-sm leading-6 text-[#F3EFE7]/70">
+                900 Dekalb Ave. NE
+                <br />
+                Suite 400
+                <br />
+                Atlanta, GA 30307
+                <br />
+                USA
+              </p>
 
-            <p className="mt-6 text-lg text-[#F3EFE7]/70">678-701-7484</p>
+              <div className="mt-5 space-y-1 text-sm text-[#F3EFE7]/70">
+                <p>678-701-7484</p>
+                <p>info@creatureatl.com</p>
+              </div>
 
-            <p className="mt-2 text-lg text-[#F3EFE7]/70">
-              info@creatureatl.com
-            </p>
-
-            <Link
-              to="/contact"
-              className="mt-8 inline-flex items-center gap-3 border-b border-[#F3EFE7]/60 pb-2 text-sm uppercase tracking-[0.12em]"
-            >
-              Contact us
-              <ArrowUpRight size={17} />
-            </Link>
+              <Link
+                to="/contact"
+                className="mt-6 inline-flex items-center gap-3 border-b border-[#F3EFE7]/60 pb-2 text-xs uppercase tracking-[0.12em] transition-opacity hover:opacity-60"
+              >
+                Contact us
+                <ArrowUpRight size={15} />
+              </Link>
+            </div>
           </div>
         </div>
       </section>
