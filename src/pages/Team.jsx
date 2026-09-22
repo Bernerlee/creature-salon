@@ -6,22 +6,19 @@ function Team() {
   return (
     <main className="bg-[#F3EFE7] text-[#171717]">
       {/* Hero */}
-      <section className="px-6 pb-20 pt-40 md:px-10 lg:px-16 lg:pb-28">
-        <p className="mb-6 text-xs uppercase tracking-[0.2em] text-[#171717]/50">
-          Creature Studio
-        </p>
+      <section className="bg-[#F3EFE7] px-6 pb-20 pt-24 text-[#171717] md:px-10 md:pb-28 md:pt-32 lg:px-16">
+        <div className="mx-auto max-w-[1400px]">
+          <p className="mb-6 text-xs uppercase tracking-[0.2em] text-[#171717]/50">
+            Our team
+          </p>
 
-        <h1 className="max-w-6xl text-6xl leading-[0.88] tracking-[-0.08em] md:text-8xl lg:text-[10rem]">
-          Our
-          <br />
-          Team
-        </h1>
+          <h1 className="max-w-5xl text-6xl leading-[0.88] tracking-[-0.07em] md:text-8xl lg:text-[10rem]">
+            Our team
+          </h1>
 
-        <div className="mt-12 grid gap-8 md:grid-cols-2">
-          <p className="max-w-xl text-lg leading-8 text-[#171717]/70 md:ml-auto">
-            A collective of stylists, artists, creatives, and people who care
-            deeply about the work they do and the people sitting in their
-            chairs.
+          <p className="mt-10 max-w-2xl text-xl leading-8 text-[#171717]/65 md:text-2xl md:leading-9">
+            A collective of stylists, artists, creatives, and individuals who
+            believe beauty is more than what you see on the surface.
           </p>
         </div>
       </section>
