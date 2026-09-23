@@ -6,6 +6,7 @@ import Services from "../pages/Services";
 import About from "../pages/About";
 import Team from "../pages/Team";
 import Book from "../pages/Book";
+import Policies from "../pages/Policiies";
 
 export const AppRoutes = () => {
   return (
@@ -16,6 +17,7 @@ export const AppRoutes = () => {
         <Route path="/about" element={<About />} />
         <Route path="/team" element={<Team />} />
         <Route path="/book" element={<Book />} />
+        <Route path="/policies" element={<Policies />} />
       </Route>
     </Routes>
   );

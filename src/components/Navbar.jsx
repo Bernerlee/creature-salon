@@ -7,6 +7,7 @@ const navLinks = [
   { name: "About", path: "/about" },
   { name: "Team", path: "/team" },
   { name: "Contact", path: "/contact" },
+  { name: "Policies", path: "/policies" },
 ];
 
 function Navbar() {
@@ -61,7 +62,7 @@ function Navbar() {
         <button
           type="button"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
-          className="flex items-center justify-center lg:hidden"
+          className="flex items-center justify-center lg:hidden cursor-pointer"
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}
           aria-expanded={isMenuOpen}
         >
