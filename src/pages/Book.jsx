@@ -121,7 +121,9 @@ function Book() {
 
               {/* Replace the href with the real booking-system URL */}
               <a
-                href="#"
+                href="https://www.creatureatl.com/shop#book-now"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center gap-3 bg-[#F3EFE7] px-7 py-5 text-sm uppercase tracking-[0.12em] text-[#171717] transition-opacity hover:opacity-80"
               >
                 Continue to booking
