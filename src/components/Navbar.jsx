@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Menu, X, ArrowUpRight } from "lucide-react";
 import { Link } from "react-router-dom";
+import creatureLogo from "../assets/images/Diamond-Mark-04.png";
 
 const navLinks = [
   { name: "Services", path: "/services" },
@@ -22,7 +23,7 @@ function Navbar() {
         {/* Logo */}
         <Link to="/" onClick={closeMenu} className="flex items-center gap-2">
           <img
-            src="/src/assets/images/Diamond-Mark-04.png"
+            src={creatureLogo}
             alt="Creature Studio"
             className="h-9 w-auto"
           />
