@@ -57,12 +57,12 @@ function Policies() {
       </section>
 
       {/* Image */}
-      <section className="px-6 pb-24 md:px-10 lg:px-16">
+      <section className="px-6 pb-14 md:px-10 lg:px-16">
         <div className="mx-auto max-w-[1400px] overflow-hidden">
           <img
             src={policyImage}
             alt="Creature Studio"
-            className="h-[450px] w-full object-cover md:h-[900px] lg:h-[1200px]"
+            className="h-[450px] w-full object-cover md:h-[750px] lg:h-[1200px]"
           />
         </div>
       </section>
