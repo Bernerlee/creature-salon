@@ -1,5 +1,5 @@
 import { ArrowUpRight, ArrowUp } from "lucide-react";
-import { FaInstagram } from "react-icons/fa";
+import { FaFacebook, FaInstagram } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 function Footer() {
@@ -40,16 +40,16 @@ function Footer() {
             </Link>
 
             <Link to="/about" className="transition-opacity hover:opacity-60">
-              Studio
+              About
             </Link>
 
             <Link to="/team" className="transition-opacity hover:opacity-60">
               Team
             </Link>
 
-            <Link to="/contact" className="transition-opacity hover:opacity-60">
+            {/* <Link to="/contact" className="transition-opacity hover:opacity-60">
               Contact
-            </Link>
+            </Link> */}
           </nav>
         </div>
 
@@ -61,21 +61,31 @@ function Footer() {
 
           <div className="flex flex-col items-start gap-4">
             <a
-              href="mailto:hello@creatureatl.com"
+              href="mailto:info@creatureatl.com"
               className="flex items-center gap-2 transition-opacity hover:opacity-60"
             >
-              hello@creatureatl.com
+              info@creatureatl.com
               <ArrowUpRight size={16} />
             </a>
 
             <a
-              href="https://www.instagram.com/"
+              href="https://www.instagram.com/creature.atl"
               target="_blank"
               rel="noreferrer"
               className="flex items-center gap-2 transition-opacity hover:opacity-60"
             >
               Instagram
               <FaInstagram size={16} />
+            </a>
+
+            <a
+              href="https://www.facebook.com/creatureatl"
+              target="_blank"
+              rel="noreferrer"
+              className="flex items-center gap-2 transition-opacity hover:opacity-60"
+            >
+              Facebook
+              <FaFacebook size={16} />
             </a>
 
             <Link
