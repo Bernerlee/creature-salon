@@ -22,7 +22,7 @@ function Navbar() {
         {/* Logo */}
         <Link to="/" onClick={closeMenu} className="flex items-center gap-2">
           <img
-            src="/src/assets/images/Diamond_Mark-04.png"
+            src="/src/assets/images/Diamond-Mark-04.png"
             alt="Creature Studio"
             className="h-9 w-auto"
           />
