@@ -38,7 +38,7 @@ function Policies() {
   return (
     <div className="bg-[#F3EFE7] text-[#171717]">
       {/* Hero */}
-      <section className="px-6 pb-20 pt-28 md:px-10 md:pb-28 md:pt-36 lg:px-16">
+      <section className="px-6 pb-10 pt-28 md:px-10 md:pb-16 md:pt-36 lg:px-16">
         <div className="mx-auto max-w-[1400px]">
           <p className="mb-6 text-xs uppercase tracking-[0.2em] text-[#171717]/50">
             Studio policies
@@ -62,7 +62,7 @@ function Policies() {
           <img
             src={policyImage}
             alt="Creature Studio"
-            className="h-[450px] w-full object-cover md:h-[750px] lg:h-[1200px]"
+            className="h-[450px] w-full object-cover md:h-[750px] lg:h-[1250px]"
           />
         </div>
       </section>
