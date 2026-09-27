@@ -89,7 +89,7 @@ function Footer() {
             </a>
 
             <Link
-              to="/book"
+              to="https://www.creatureatl.com/shop#book-now"
               className="mt-3 inline-flex items-center gap-3 border border-[#F3EFE7]/40 px-5 py-3 text-sm transition-colors hover:bg-[#F3EFE7] hover:text-[#171717]"
             >
               Book an Appointment
