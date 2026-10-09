@@ -41,8 +41,10 @@ function LocationSection() {
 
             <p className="mt-8 text-sm text-[#171717]/70">678 701 7484</p>
 
-            <Link
-              to="/contact"
+            <a
+              href="https://maps.app.goo.gl/QVkb27Wd1ayc8tJa9"
+              target="_blank"
+              rel="noopener noreferrer"
               className="group mt-10 flex w-fit items-center gap-3 border-b border-black/40 pb-3 text-xs font-medium uppercase tracking-[0.12em] transition-colors duration-300 hover:border-black"
             >
               Get Directions
@@ -51,7 +53,7 @@ function LocationSection() {
                 strokeWidth={1.5}
                 className="transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1"
               />
-            </Link>
+            </a>
           </div>
 
           {/* Image */}
