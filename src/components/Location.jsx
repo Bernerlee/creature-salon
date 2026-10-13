@@ -1,5 +1,4 @@
 import { ArrowUpRight, MapPin } from "lucide-react";
-import { Link } from "react-router-dom";
 
 import locationImage from "../assets/images/exterior-1.jpg";
 
